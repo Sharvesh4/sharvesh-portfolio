@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sharvesh V | Home</title>
+
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header with logo and navigation menu -->
+    <header>
+        <div class="logo">SV</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="nav-menu">
+            <ul>
+                <!-- Navigation icons (tooltips added with 'title') -->
+                <li><a href="index.html" title="Home"><i data-lucide="home"></i></a></li>
+                <li><a href="about.html" title="About"><i data-lucide="user"></i></a></li>
+                <li><a href="resume.html" title="Resume"><i data-lucide="file-text"></i></a></li>
+                <li><a href="projects.html" title="Projects"><i data-lucide="folder"></i></a></li>
+                <li><a href="contact.html" title="Contact"><i data-lucide="mail"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main hero section of the homepage -->
+    <main>
+        <section class="hero parallax">
+            <h1>Welcome</h1>
+            <p>University student with a passion for the judicial field.</p>
+        </section>
+    </main>
+
+    <!-- Load interactivity script -->
+    <script src="script.js"></script>
+
+    <!-- Activate Lucide icons -->
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Root variables for easy theming */
+:root {
+    --accent-color: #3A6FF7;
+    --bg-dark: #121212;
+    --text-light: #f0f0f0;
+    --radius: 8px;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-body);
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 1rem;
+}
+
+/* Logo section (top-left) */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hamburger menu for mobile */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+/* Hero section on the homepage */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/* Generic content wrapper */
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Project grid layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Each individual project card */
+.project-card {
+    background: #222;
+    padding: 1rem;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
